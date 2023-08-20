@@ -243,6 +243,70 @@
   align-items: center;
 }
 
+.card {
+  background-color: #f7f8fe !important;
+  border-radius: 20px !important;
+  padding: 2rem;
+  text-align: center;
+  border: 3px solid #f7f8fe !important;
+  transition: all 0.3s;
+  margin-top: 2rem;
+}
+.card:hover {
+  border: 3px solid #4219dc !important;
+  transform: translateY(-5px);
+}
+.card:hover .card-icon {
+  background-color: #4219dc;
+  transform: translateY(-5px);
+}
+.card:hover .card-icon i {
+  color: #FFF;
+}
+.card:hover .card-icon::before {
+  background-color: #4219dc;
+}
+.card-icon {
+  display: flex;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  height: 100px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  margin: 1rem auto 2rem auto;
+  position: relative;
+}
+.card-icon::before {
+  content: "";
+  background-color: #FFF;
+  padding: 1rem;
+  height: 120px;
+  width: 85px;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.4s;
+}
+.card-icon i {
+  color: #4219dc;
+  font-size: 3rem;
+  position: relative;
+}
+.card-title {
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 1.8rem;
+  color: #000;
+  font-family: "Poppins";
+  margin-bottom: 1rem !important;
+}
+.card-text {
+  font-size: 0.9rem;
+}
 .card-primary {
   border-left: solid 6px #4219dc;
   color: #4219dc;
@@ -282,7 +346,6 @@
 
 .section-slider {
   background: linear-gradient(90deg, #4219dc, #973af1);
-  padding-bottom: 4rem;
 }
 .section-slider_info {
   display: flex;
@@ -314,7 +377,6 @@
   position: absolute;
   background: #FFF;
   left: 0;
-  bottom: 4rem;
   clip-path: polygon(0 5%, 0% 100%, 163% 100%);
 }
 .section-about_list {
@@ -356,6 +418,63 @@
 }
 .section-about_skills-item {
   margin-bottom: 1rem;
+}
+.section-resume {
+  background-color: #f7f8fe;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-family: "Poppins";
+  justify-content: start;
+  position: relative;
+}
+.timeline-card {
+  background-color: #FFF;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 20px;
+}
+.timeline-item {
+  margin: 1rem;
+  text-align: left;
+  position: relative;
+}
+.timeline-item::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #4219dc;
+  position: absolute;
+  left: -32px;
+}
+.timeline-item:not(:last-child):after {
+  content: "";
+  width: 4px;
+  height: 127%;
+  border-radius: 20px;
+  background-color: #4219dc;
+  position: absolute;
+  top: 0;
+  left: -24px;
+}
+.timeline-title {
+  color: #4219dc;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+.timeline-year {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.timeline-text {
+  margin: 0;
+  font-size: 0.8rem;
 }
 
 body {
