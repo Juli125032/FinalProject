@@ -1,0 +1,6 @@
+.card{
+    &-primary{
+        border-left: solid 6px $color-primary;
+        color: $color-primary;
+    }
+}
