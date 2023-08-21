@@ -20,7 +20,8 @@
         &:hover{
             @include button();
             border: 1px solid transparent;
-            background: linear-gradient( 90deg, $color-primary, $color-secondary);
+            background: $color-white;
+            color: $color-primary;
         }
     }
 }
