@@ -169,6 +169,10 @@
 .button-primary ::first-letter {
   text-transform: capitalize;
 }
+.button-primary a {
+  color: #FFF !important;
+  text-decoration: none !important;
+}
 .button-primary:hover {
   font-family: "Quicksand";
   font-weight: 500;
@@ -203,6 +207,10 @@
 .button-secondary ::first-letter {
   text-transform: capitalize;
 }
+.button-secondary a {
+  color: #FFF !important;
+  text-decoration: none !important;
+}
 .button-secondary:hover {
   font-family: "Quicksand";
   font-weight: 500;
@@ -220,6 +228,10 @@
 }
 .button-secondary:hover ::first-letter {
   text-transform: capitalize;
+}
+.button-secondary:hover a {
+  color: #4219dc !important;
+  text-decoration: none !important;
 }
 
 .button-icon {
@@ -363,8 +375,6 @@
 }
 .nav .logo img {
   max-width: 4rem;
-  display: block;
-  margin: auto;
 }
 
 .mobile-btn {
@@ -627,7 +637,6 @@
 
 .logo {
   display: block;
-  margin: auto;
   width: 80px;
   height: 80px;
   margin-bottom: 0.8rem;
